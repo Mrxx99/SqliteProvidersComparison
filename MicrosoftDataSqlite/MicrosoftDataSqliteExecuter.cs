@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Data.Sqlite;
 using Shared;
@@ -94,6 +93,8 @@ namespace MicrosoftDataSqlite
 
         public IEnumerable<User> ReadEntries()
         {
+            var result = new List<User>();
+
             var command = _connection.CreateCommand();
 
             command.CommandText =
@@ -108,7 +109,7 @@ namespace MicrosoftDataSqlite
             {
                 while (reader.Read())
                 {
-                    yield return new User
+                    result.Add(new User
                     {
                         Name = reader.GetString(0),
                         Address = new Address
@@ -116,9 +117,11 @@ namespace MicrosoftDataSqlite
                             City = reader.GetString(1),
                             Id = reader.GetInt64(2)
                         }
-                    };
+                    });
                 }
             }
+
+            return result;
         }
 
         public void Dispose()

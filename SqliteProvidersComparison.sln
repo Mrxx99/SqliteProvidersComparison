@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{C6FEC1DC-F79E-4DF3-8CF8-65A8EF473255}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftEntitiyFrameworkCoreSqlite", "MicrosoftEntitiyFrameworkCoreSqlite\MicrosoftEntitiyFrameworkCoreSqlite.csproj", "{150AC5AE-A95D-48DE-990D-F2E26D2E7237}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C6FEC1DC-F79E-4DF3-8CF8-65A8EF473255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6FEC1DC-F79E-4DF3-8CF8-65A8EF473255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6FEC1DC-F79E-4DF3-8CF8-65A8EF473255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150AC5AE-A95D-48DE-990D-F2E26D2E7237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150AC5AE-A95D-48DE-990D-F2E26D2E7237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150AC5AE-A95D-48DE-990D-F2E26D2E7237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150AC5AE-A95D-48DE-990D-F2E26D2E7237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -90,7 +90,7 @@ namespace DapperMicrosoftDataSqlite
             {
                 user.Address = address;
                 return user;
-            }, splitOn: "split");
+            }, splitOn: "split").ToList();
         }
 
         public void Dispose()
